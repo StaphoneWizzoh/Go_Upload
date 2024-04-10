@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	db, err := gorm.Open(sqlite.Open("file_storage.db"), &gorm.Config{})
+	db, err := gorm.Open(sqlite.Open("server.db"), &gorm.Config{})
 	if err != nil {
 		log.Fatalf("Error connecting to database: %v", err)
 	}
